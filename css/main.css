@@ -1,0 +1,181 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-text-size-adjust: 100%;
+
+	font-family: 'Londrina Solid', cursive;
+	font-family: 'Rubik', sans-serif;
+
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	background-color: #2b2b2b;
+}
+
+.nav {
+	background-color: #000;
+}
+
+.logo {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+nav li {
+	display: inline-block;
+	list-style: none;
+	text-align: right;
+}
+
+/**ROBOT STYLE**/
+
+.st0 {
+	fill: #ff8c00;
+}
+
+.st1 {
+	fill: #d90000;
+}
+
+.st2 {
+	fill: #f8580c;
+}
+
+.st3 {
+	fill: #fff4d6;
+}
+
+.st4 {
+	fill: #ff2d00;
+}
+
+.st5 {
+	fill: #ffb501;
+}
+
+/**ROBOT STYLE**/
+
+.robot {
+	width: 15%;
+	margin-left: 42%;
+	padding-top: 3em;
+}
+
+@keyframes dance {
+	0% {
+		transform: rotate(0deg);
+		transform-origin: bottom right;
+	}
+	12% {
+		transform: rotate(3deg);
+		transform-origin: bottom right;
+	}
+	25% {
+		transform: rotate(8deg);
+		transform-origin: bottom right;
+	}
+	37% {
+		transform: rotate(6deg);
+		transform-origin: bottom left;
+	}
+	50% {
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+	62% {
+		transform: rotate(-3deg);
+		transform-origin: bottom left;
+	}
+	75% {
+		transform: rotate(-8deg);
+		transform-origin: bottom left;
+	}
+	87% {
+		transform: rotate(-4deg);
+		transform-origin: bottom right;
+	}
+	100% {
+		transform: rotate(0deg);
+		transform-origin: bottom left;
+	}
+}
+
+#whole-head:hover {
+	animation: dance 1s ease-in-out infinite;
+}
+
+@keyframes stomp {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(0, -20px);
+	}
+}
+
+#l-leg:hover {
+	animation: stomp 1s ease-in infinite alternate;
+}
+
+#r-leg:hover {
+	animation: stomp 1s ease-in infinite;
+}
+
+@keyframes shimmy {
+	0% {
+		transform: translate(0, 0);
+	}
+	25% {
+		transform: translate(0, 0px);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	75% {
+		transform: translate(0, -20px);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+#body:hover {
+	animation: dance 1s ease-in-out infinite reverse;
+}
+
+#arms:hover {
+	animation: shimmy 1s ease-out infinite alternate;
+}
+
+#legs:hover {
+	animation: dance 1s ease-in-out infinite reverse;
+}
+
+h1 {
+	font-family: 'Londrina Solid', cursive;
+	color: #000;
+	font-size: 6.5em;
+	text-align: center;
+	margin: 0;
+}
+
+.p1 {
+	font-family: 'Londrina Solid', cursive;
+	color: #000;
+	font-size: 3em;
+	text-align: center;
+	margin-top: -0.25em;
+}
