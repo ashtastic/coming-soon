@@ -29,7 +29,6 @@ body {
 
 header {
 	padding: 0.5em 0;
-	margin-bottom: 1em;
 	position: fixed;
 	display: block;
 	width: 100%;
@@ -89,7 +88,7 @@ header {
 }
 
 .robot {
-	width: 180px;
+	width: 200px;
 }
 
 h1 {
@@ -226,19 +225,20 @@ h1 {
 	animation: stomp 1s ease-in infinite;
 }
 
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 25em) {
 
 /* SPLASH - DANCING ROBOT */
 
 	.splash {
-		padding-top: 80px;
+		padding-top: 90px;
 	}
 
 	.robot {
 		width: 200px;
 	}
 }
-
 
 @media only screen and (min-width: 38em) {
 
@@ -274,23 +274,15 @@ h1 {
 /* SPLASH - DANCING ROBOT */
 
 	.splash {
-		padding-top: 40px;
+		padding-top: 50px;
 	}
 
 	h1 {
-		margin: 0;
-		font-family: 'Londrina Solid', cursive;
 		font-size: 3rem;
-		text-align: center;
-		color: #000;
 	}
 
 	.p1 {
-		margin-top: -0.25em;
-		font-family: 'Rubik', sans-serif;
 		font-size: 2rem;
-		text-align: center;
-		color: #000;
 	}
 
 }
@@ -298,16 +290,12 @@ h1 {
 @media only screen and (min-width: 60em) {
 }
 
-@media only screen and (min-width: 80em) {
-	.splash {
-		padding-top: 80px;
-	}
+@media only screen and (min-width: 90em) {
+
+/* SPLASH - DANCING ROBOT */
 
 	.robot {
 		width: 300px;
 	}
-}
-
-@media only screen and (min-width: 90em) {
 }
 
