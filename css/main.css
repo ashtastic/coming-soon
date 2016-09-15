@@ -107,6 +107,15 @@ h1 {
 	color: #000;
 }
 
+.p2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+}
+
 /* Robot style */
 
 .st0 {
@@ -283,6 +292,10 @@ h1 {
 
 	.p1 {
 		font-size: 2rem;
+	}
+
+	.p2 {
+		font-size: 1.5rem;
 	}
 
 }
