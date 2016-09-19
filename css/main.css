@@ -233,19 +233,15 @@ h1 {
 }
 
 #arms:hover {
-	animation: shimmy 1s ease-out infinite alternate;
-}
-
-#legs:hover {
-	animation: dance 1s ease-in-out infinite reverse;
+	animation: shimmy 1s ease-out infinite;
 }
 
 #l-leg:hover {
-	animation: stomp 1s ease-in infinite alternate;
+	animation: shimmy 1s ease-in infinite;
 }
 
 #r-leg:hover {
-	animation: stomp 1s ease-in infinite;
+	animation: shimmy 500ms ease-in infinite;
 }
 
 /* MEDIA QUERIES */
